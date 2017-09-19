@@ -1,0 +1,60 @@
+
+public class StringIndexEx {
+
+	public static void main(String[] args) {
+		StringIndexEx stringIE = new StringIndexEx();
+		System.out.println(stringIE.first3("Tere, maailm"));
+		System.out.println(stringIE.firstHalf("maailm"));
+		
+		System.out.println("String töötluse klass töötab!");
+
+		String s = "hello";
+		System.out.println(s.substring(1,3));//he
+		System.out.println(s.substring(2));	
+		
+		String str = new String("Welcome");
+		System.out.print("Found Index :" );
+		System.out.println(str.indexOf( 'l' ));
+		
+		String string = "number";
+		char result = string.charAt(4);
+	    System.out.println(result);
+	    
+	    String startsWith = ("Joiners");
+	    System.out.print("Return Value :" );
+	    System.out.println(startsWith.startsWith("J") );
+	    System.out.print("Return Value :" );
+	    System.out.println(startsWith.endsWith("s") );
+	
+	}    
+	// 1.first3("Mark-Hendrik") -> "Mar"
+	public String first3(String str) {
+		return str.substring(0, 2);
+	}
+	
+	// 2.firstHalf("maailm") -> "maa"
+	public String firstHalf(String str) {
+		int halfLength = str.length() / 2;
+		return str.substring(0, halfLength);
+	}
+	
+	//3. aToB("kalambuur") -> "alamb"
+	// aToB("tambur") -> "amb"
+	public String aToB(String str) {
+		//aIndex - mitmendal kohal on täht 'a'
+		int aIndex = str ("Found index :" );
+		System.out.println();
+		//bIndex - mitmendal kohal on täht 'b'
+		int bIndex = str ("Found index :" );
+		
+		
+	}
+	 /*
+	 Mingi kood välja kommenteeritud. jne
+	 Mingi kood.
+	 Mingi kood.
+	 */
+	
+	
+	
+}
